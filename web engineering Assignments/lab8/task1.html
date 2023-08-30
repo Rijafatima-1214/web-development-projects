@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="task1.css">
+  <script src="task1.js"></script>
+</head>
+<body>
+  <div class="container">
+    <form>
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" required>
+  
+      <label for="psw">Password</label>
+     <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[1-98])" title="Must contain at least
+    1 uppercase letter, 1 lowercase letter, 1 digit and 1 ASCII character " required>
+  
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+  
+  <div id="message">
+    <h3>Password must contain the following:</h3>
+    <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+    <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+    <p id="digit" class="invalid">A <b>digit</b></p>
+    <p id="ASCII character" class="invalid">A<b>ASCII character</b></p>
+  </div>
+</body>
+</html>

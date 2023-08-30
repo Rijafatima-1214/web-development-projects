@@ -1,0 +1,51 @@
+*{  
+    margin: 0px;  
+    padding: 0px;  
+    box-sizing: border-box;  
+    background-color: indigo;  
+  }  
+  h1{  
+    text-align: center;  
+    color: white;  
+  }  
+  .carousel{  
+    width:50%;  
+    margin: auto;  
+    overflow: hidden;  
+  }  
+  .carouselContainer{  
+    display: flex;  
+  }  
+  .slides{  
+    width: 100%;  
+    height:390px;  
+  }  
+  .button{  
+    position: relative;  
+    transition: 0.1s ease-in;  
+  }  
+  #pause{  
+    position: absolute;  
+    background-color: white;  
+    opacity: 0.5;  
+    top: 25%;  
+    right: 25%;  
+    width: 5%;  
+    height: 20%;  
+    z-index: 5;  
+  }  
+  #pause:hover{  
+    opacity: 0.2;  
+  }  
+  #play{position: absolute;  
+    background-color: white;  
+    opacity: 0.5;  
+    top: 25%;  
+    left: 25%;  
+    width: 5%;  
+    height: 20%;  
+    z-index: 5;  
+  }  
+  #play:hover{  
+    opacity: 0.2;  
+  }  

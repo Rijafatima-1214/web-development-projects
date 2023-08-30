@@ -1,0 +1,29 @@
+#label{
+    font-size: 14pt; 
+    font-weight: bold; 
+    font-family: sans-serif;
+    margin-left: 42%;
+}
+
+#btn-submit{
+    margin: 10px;
+    margin-left: 55%; 
+    background-color: green; 
+    width: 85px; 
+    height: 35px; 
+    border-radius: 6px; 
+    color: white;
+}
+
+input{
+    border: 2px solid black; 
+    width: 15rem; 
+    height: 1.5rem;
+    margin-left: 42%;
+}
+
+#story{
+    margin-left: 42%;
+    border: 2px solid black; 
+    width: 15rem;
+}

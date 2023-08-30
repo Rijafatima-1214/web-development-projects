@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="index.css" />
+    
+    <title>Story Page</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <script>
+      $("div").html("<span class='red'>Hello <b>Again</b></span>");
+
+      $(document).ready(function () {
+        // On button click, get value
+        // of input control Show alert
+        // message box
+        $("#btn-submit").click(function () {
+          var nameString = $("#name").val();
+          var CharNameString = $("#char-name").val();
+          var storyString = $("#story").val();
+        });
+      });
+    </script>
+  </head>
+
+  <body style="background-color: rgb(174, 193, 196)">
+    <h1 style="margin-left: 38%">Welcome to Story Telling</h1>
+
+    <label id="label">Name:</label><br />
+    <input type="text" id="name" value="My-Name" required /><br /><br />
+    <label id="label">Charater Name</label><br />
+    <input
+      type="text"
+      id="char-name"
+      value="Character-Name"
+      required
+    /><br /><br />
+    <label id="label">Adverb/Adjective</label><br />
+    <input type="text" id="adverb" value="Yesterday" required /><br /><br />
+    <label id="label">Write Story</label><br />
+    <textarea rows="4" id="story" required></textarea><br />
+
+    <button type="submit" id="btn-submit">Submit</button>
+
+    <h1 id="storyHeading" style="margin-left: 40%; margin-top: 20px"></h1>
+    <h3 style="margin: 10px; margin-left: 20px"></h3>
+    <div id="open_ender_output" style="margin: 10px; margin-left: 20px"></div>
+    <script>
+      $("#btn-submit").click(function () {
+        $("#storyHeading").html("<b>" + $("#name").val() + "'s Story</b>");
+        $("h3").html(
+          "Character of Story is: <i>" + $("#char-name").val() + "</i>"
+        );
+        $("div").html("<span class='red'>" + $("#story").val() + "</span>");
+      });
+    </script>
+  </body>
+</html>
